@@ -1,0 +1,22 @@
+[package]
+## Add your package's name, description, Github URL, and author here
+#name = "Replace me!"
+#description = "Also replace me!"
+#url = "https://github.com/YOU ORG NAME/REPLACE ME TOO!"
+#author = "Your name here"
+
+[scripts]
+lint = "python -m black --target-version py37 --line-length 120 --check ."
+lint-fix = "python -m black --target-version py37 --line-length 120 ."
+test = "python -m pytest -v --junitxml=tmp/test-output/pytest.xml"
+
+[packages]
+## Add your dependencies here
+#requests = "*"
+
+[dev-packages]
+pytest = "*"
+black = "==19.3b0"
+
+[requires]
+python_version = "3.8"
